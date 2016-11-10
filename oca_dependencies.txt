@@ -1,0 +1,2 @@
+odoo-extra https://github.com/gurneyalex/odoo-extra.git OCA-runbot
+runbot-addons https://github.com/gurneyalex/runbot-addons.git 9.0-OCA-installation
