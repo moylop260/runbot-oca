@@ -21,3 +21,6 @@ find ${HOME} -name __init__.py -exec sed -i  "/import test_crawl/d" {} \;
 
 # Download docker image required
 if [[ "${TESTS}" == "1"  ]]; then docker pull vauxoo/odoo-80-image-shippable-auto; fi
+
+# This is not required for OCA, but is required for VAUXOO one then to have 2 compatibility
+docker run -d -p 5000:5000 --name registry registry:2
